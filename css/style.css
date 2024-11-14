@@ -1093,6 +1093,15 @@ color: var(--category-seafood);*/
   background-color: none;
  }
 
- .filler_block_two_headline
+ .filler_block_two_text {
+  font-size: 14px;
+  width: 432px;
+  height: 367px;
+  color: var(--color-light);
+  justify-content: space-between;
+  margin-left: 25px;
+ }
 
- .filler_block_two_text
+ .ingredients_list {
+  margin: 0 10px 20px 0;
+ }
