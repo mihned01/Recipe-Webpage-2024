@@ -1079,17 +1079,6 @@ color: var(--category-seafood);*/
   border-bottom: 1px solid var(--color-light);
  }
 
-/*.filler_block {
-  height: 2000px;
-  width: var(--width-full);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  justify-content: center;
-  background-color: none;
- }*/
-
 .recipe_instruction_one_container_filler_block_one_text {
   font-size: 14px;
   width: 555px;
@@ -1097,9 +1086,10 @@ color: var(--category-seafood);*/
   color: var(--color-light);
   margin-top: 40px;
   justify-content: space-between;
+  line-height: 1.8;
  }
 
-.instruction_list li {
+.instruction_list_one li {
   margin: 0 10px 25px 10px;
  }
 
@@ -1142,11 +1132,160 @@ color: var(--category-seafood);*/
  .ingredients_list {
   margin: 0 10px 20px 10px;
   gap: 0 10px;
+  line-height: 1.5;
  }
 
  .ingredients_list li {
   margin: 0 10px 3px 10px;
  }
+ 
+
+ .recipe_instruction_two {
+  width: var(--width-full);
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 96px;
+}
+
+.recipe_instruction_two_container {
+  width: var(--width-12col);
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe_instruction_two_container_filler_block {
+  width: var(--width-12col);
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recipe_instruction_two_container_filler_block_one {
+  width: 50%;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.recipe_instruction_two_container_filler_block_one_headline h3 {
+  color:var(--color-white);
+  height:60px;
+  width:var(--width-12col);
+  text-transform: uppercase;
+  font-weight:700;
+  display:flex;
+  align-items: center;
+  justify-self: flex-start;
+  margin: 0 auto;
+  font-size: 50px;
+  text-shadow: 1px 1px 3px var(--background-color-dark-bg);
+  border-bottom: 1px solid var(--color-light);
+ }
+
+.recipe_instruction_two_container_filler_block_one_text {
+  font-size: 14px;
+  width: 555px;
+  height: 754px;
+  color: var(--color-light);
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: space-between;
+  line-height: 1.5;
+  margin-bottom: 96px;
+  align-items: flex-start;
+ }
+
+.instruction_list_two {
+  align-items: flex-start;
+}
+
+.instruction_list_two li {
+  margin: 0 0 25px 10px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+ }
+
+ .instruction_list_two li h4 {
+  font-size: 13px;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  font-weight: 300;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  white-space: nowrap;
+  word-spacing: 10px;
+  margin-top: 58px;
+ }
+
+ .instruction_list_two li p {
+  font-size: 14px;
+  color: var(--color-light);
+  display: flex;
+  flex-direction: row;
+  line-height: 1.9;
+ }
+
+.recipe_instruction_two_container_filler_block_two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-end;
+  background-color: none;
+  align-items: flex-start;
+ }
+
+.recipe_instruction_two_container_filler_block_two_headline h3 {
+  color:var(--color-white);
+  height:60px;
+  width:var(--width-12col);
+  width: 50%;
+  text-transform: uppercase;
+  font-weight:700;
+  display:flex;
+  align-items: center;
+  justify-self: flex-end;
+  margin: 0 auto;
+  font-size: 50px;
+  text-shadow: 1px 1px 3px var(--background-color-dark-bg);
+  border-bottom: 1px solid var(--color-light);
+}
+
+ .recipe_instruction_two_container_filler_block_two_text {
+  font-size: 14px;
+  width: 420px;
+  height: 367px;
+  color: var(--color-light);
+  justify-content: space-between;
+  margin-left: 75px;
+  margin-top: 40px;
+ }
+
+ .ingredients_list {
+  margin: 0 10px 10px 0;
+  gap: 0 10px;
+  line-height: 1.5;
+  list-style: none;
+ }
+
+ .ingredients_list li {
+  margin: 0 10px 3px 10px;
+ }
+
 
  .meet_the_team {  
   height: fit-content;
