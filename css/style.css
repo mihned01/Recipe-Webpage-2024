@@ -1068,15 +1068,14 @@ color: var(--category-seafood);*/
   color:var(--color-white);
   height:60px;
   width: var(--width-12col);
-  width:100%;
   text-transform: uppercase;
   font-weight:700;
   display:flex;
   align-items: center;
-  justify-self: flex-start;
+  justify-self: center;
   margin: 0 auto;
   margin-right: 50px;
-  font-size: 40px;
+  font-size: 50px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
  }
@@ -1116,7 +1115,7 @@ color: var(--category-seafood);*/
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  font-size: 40px;
+  font-size: 50px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
 }
@@ -1180,14 +1179,15 @@ color: var(--category-seafood);*/
 .recipe_instruction_two_container_filler_block_one_headline h3 {
   color:var(--color-white);
   height:60px;
-  width:100%;
+  width: var(--width-12col);
   text-transform: uppercase;
   font-weight:700;
   display:flex;
   align-items: center;
-  justify-self: flex-start;
+  justify-self: center;
   margin: 0 auto;
-  font-size: 40px;
+  margin-right: 50px;
+  font-size: 50px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
  }
@@ -1254,15 +1254,15 @@ color: var(--category-seafood);*/
 .recipe_instruction_two_container_filler_block_two_headline h3 {
   color:var(--color-white);
   height:60px;
-  width:var(--width-12col);
+  width: var(--width-12col);
   width: 100%;
   text-transform: uppercase;
   font-weight:700;
   display:flex;
   align-items: center;
-  justify-self: flex-end;
+  justify-self: center;
   margin: 0 auto;
-  font-size: 40px;
+  font-size: 50px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
 }
@@ -2111,6 +2111,7 @@ form button:hover {
     width: 100%;
     flex-direction: column; 
     margin: 0 auto;
+    justify-content: center;
   }
 
   .recipe_instruction_one_container_filler_block_one_text,
@@ -2132,7 +2133,7 @@ form button:hover {
     color:var(--color-white);
     height:40px;
     text-transform: uppercase;
-    font-weight:400;
+    font-weight:300;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
@@ -2150,12 +2151,13 @@ form button:hover {
     color:var(--color-white);
     height:40px;
     text-transform: uppercase;
-    font-weight:400;
+    font-weight:300;
     margin: 0 auto;
     margin-top:96px;
     margin-bottom: 40px;
     font-size: 30px;
     text-shadow: 1px 1px 2px var(--background-color-dark-bg);
+    justify-content: flex-start;
   }
 
   .ingredients_list {
