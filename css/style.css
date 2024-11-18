@@ -1067,6 +1067,7 @@ color: var(--category-seafood);*/
 .recipe_instruction_one_container_filler_block_one_headline h3 {
   color:var(--color-white);
   height:60px;
+  width: var(--width-12col);
   width:100%;
   text-transform: uppercase;
   font-weight:700;
@@ -1074,6 +1075,7 @@ color: var(--category-seafood);*/
   align-items: center;
   justify-self: flex-start;
   margin: 0 auto;
+  margin-right: 50px;
   font-size: 40px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
@@ -1106,13 +1108,13 @@ color: var(--category-seafood);*/
 .recipe_instruction_one_container_filler_block_two_headline h3 {
   color:var(--color-white);
   height:60px;
-  width:var(--width-12col);
+  width: var(--width-12col);
   width: 100%;
   text-transform: uppercase;
   font-weight:700;
   display:flex;
   align-items: center;
-  justify-self: flex-end;
+  justify-self: center;
   margin: 0 auto;
   font-size: 40px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
@@ -2222,7 +2224,7 @@ form button:hover {
     grid-column-start: 1;
     grid-row-start: 1;
     width: 90%;
-    margin: 25px 25px;
+    margin: 25px 5px;
     justify-content: center;
     align-items: center;
   }
