@@ -1698,16 +1698,6 @@ form button:hover {
 
 /*Mobile frindly*/
 
-:root {
-  --mobile-padding: 10px;
-  --mobile-font-size: 14px;
-}
-
-body {
-  padding: var(--mobile-padding);
-  font-size: var(--mobile-font-size);
-}
-
 @media (width <= 768px) {
   .container {
     background: rgb(0,0,0);
