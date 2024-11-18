@@ -1067,14 +1067,14 @@ color: var(--category-seafood);*/
 .recipe_instruction_one_container_filler_block_one_headline h3 {
   color:var(--color-white);
   height:60px;
-  width:var(--width-12col);
+  width:100%;
   text-transform: uppercase;
   font-weight:700;
   display:flex;
   align-items: center;
   justify-self: flex-start;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
  }
@@ -1107,14 +1107,14 @@ color: var(--category-seafood);*/
   color:var(--color-white);
   height:60px;
   width:var(--width-12col);
-  width: 50%;
+  width: 100%;
   text-transform: uppercase;
   font-weight:700;
   display:flex;
   align-items: center;
   justify-self: flex-end;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
 }
@@ -1178,14 +1178,14 @@ color: var(--category-seafood);*/
 .recipe_instruction_two_container_filler_block_one_headline h3 {
   color:var(--color-white);
   height:60px;
-  width:var(--width-12col);
+  width:100%;
   text-transform: uppercase;
   font-weight:700;
   display:flex;
   align-items: center;
   justify-self: flex-start;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
  }
@@ -1253,14 +1253,14 @@ color: var(--category-seafood);*/
   color:var(--color-white);
   height:60px;
   width:var(--width-12col);
-  width: 50%;
+  width: 100%;
   text-transform: uppercase;
   font-weight:700;
   display:flex;
   align-items: center;
   justify-self: flex-end;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   border-bottom: 1px solid var(--color-light);
 }
@@ -1699,6 +1699,10 @@ form button:hover {
 /*Mobile frindly*/
 
 @media (width <= 768px) {
+  
+  :root {
+    --width-12col: 100%;
+  }
   .container {
     background: rgb(0,0,0);
     width:var(--width-full);
@@ -1784,20 +1788,6 @@ form button:hover {
     margin-top:60px;
     grid-row: 2;
   }
-  
-  .search-input {
-    background-color: transparent;
-    -webkit-appearance: none;
-    outline:none;
-    border: 1px solid var(--background-color-light);
-    border-radius: 5px;
-    padding: 10px 20px 10px 40px;
-    color:var(--background-color-light)
-  }
-  
-  .search-input::placeholder {
-    color:var(--background-color-light);
-  }
 
   .todays_recipe {  
     height: fit-content;
@@ -1806,8 +1796,8 @@ form button:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 130px auto;
     gap:var(--grid-gap);
-    margin-top: 58px;
-    justify-content: start;
+    margin-top: 96px;
+    justify-content: center;
   }
   
   
@@ -1821,15 +1811,16 @@ form button:hover {
   
   .todays_recipes_headline {
     color:var(--color-white);
-    height:60px;
+    height:40px;
     border-bottom: 1px solid var(--color-white);
     text-transform: uppercase;
-    font-weight:500;
-    margin-top:70px;
+    font-weight:400;
+    margin-top:96px;
     display:flex;
     align-items: center;
     justify-self: flex-start;
     margin: 0 auto;
+    margin-bottom: 40px;
     width: var(--width-12col);
     font-size: 30px;
     text-shadow: 1px 1px 3px var(--background-color-dark-bg);
@@ -1840,14 +1831,14 @@ form button:hover {
       grid-template-columns: 1fr;
       gap:var(--grid-gap);
       box-sizing: border-box;
-      width: fit-content;
+      width: 100%;
       height: fit-content;
-      margin: 20px 20px;
+      margin: 0 auto;
       justify-content: center;
   }
   
   .todays_recipes_content_block {
-      margin: 10px 10px;
+      margin: 0 auto;
       width: 100%;
       background-color: var(--background-color-light);
       border-radius: 5px;
@@ -1893,34 +1884,37 @@ form button:hover {
 
   .category_selection_headline {
     color:var(--color-white);
-    height:60px;
+    height:40px;
     border-bottom: 1px solid var(--color-white);
     text-transform: uppercase;
-    font-weight:500;
+    font-weight:400;
     display:flex;
     align-items: center;
     justify-self: flex-start;
     margin: 0 auto;
     margin-top:96px;
+    margin-bottom: 40px;
     width: var(--width-12col);
     font-size: 30px;
     text-shadow: 1px 1px 2px var(--background-color-dark-bg);
   }
 
   .category_selection_content {
-    width: fit-content;
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row (2, 1fr);
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: auto;
     padding: 20px;
+    margin: 0 auto;
   }
 
   
   .category_selection_content_block {
-    width: fit-content; 
-    height: 100px; 
-    margin: 10px 0; 
+    width: 50%; 
+    height: fit-content; 
+    margin: 0 auto; 
     transform: scale(1);
     align-items: center;
     justify-content: center;
@@ -1936,8 +1930,8 @@ form button:hover {
   }
 
   .content_image_content {
-    width: 90%; 
-    margin: 0 10%; 
+    width: 100%; 
+    margin: 0 auto; 
     grid-column-start: 1; 
     justify-items: center;
   }
@@ -1977,29 +1971,32 @@ form button:hover {
 
   .content_area_container_block_left_area,
   .content_area_container_block_right_area {
+    background-image: url(https://picsum.photos/300/175);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%; 
     height: auto; 
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
   }
 
   .content_image_content_block_left_area_text {
     width: 100%;
-    margin: 20px 0;
-    text-align: center;
+    margin: 10px 0;
+    text-align: left;
   }
 
   .content_image_content_block_left_area_button {
-    width: 100%; 
-    margin: 20px 0;
-    padding: 10px 0;
-    text-align: center;
+    width: auto; 
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: left;
   }
 
   .content_image_content_block_left_area_button a {
-    width: 100%;
+    width: fit-content;
     display: block;
-    text-align: center;
-    padding: 12px;
+    text-align: left;
+    padding: 10px;
     font-size: 16px;
   }
 
@@ -2011,18 +2008,21 @@ form button:hover {
 
   .bottom_area_container {
     width: 100%; 
+    margin: 0 auto;
+    margin-top: 96px;
     height: auto;
   }
 
   .bottom_area_container_block {
     flex-direction: row;
     width: 100%;
+    height: auto;
   }
 
   .bottom_area_container_block_left_area,
   .bottom_area_container_block_right_area {
-    width: 50%;
-    margin: 10px 0; 
+    width: 100%;
+    margin: 0 auto; 
   }
 
   .bottom_area_container_block_left_area_media {
@@ -2048,20 +2048,24 @@ form button:hover {
   }
 
   .bottom_area_container_block_right_area {
-    flex-direction: column; 
-    justify-content: flex-end;
+    flex-direction: column;
+    display: flex; 
+    justify-content: space-around;
+    align-content: flex-end;
+    margin-top: 10px;
   }
 
   .bottom_area_container_block_right_area_top,
   .bottom_area_container_block_right_area_bottom {
-    width: 50%; 
-    font-size: 12px; 
-    text-align: center; 
+    width: 80%; 
+    flex-wrap: wrap;
+    font-size: 10px; 
+    text-align: right; 
   }
 
   .bottom_area_container_block_right_area_bottom_text {
-    font-size: 12px; 
-    text-align: center;
+    font-size: 10px; 
+    text-align: right;
   }
 
   .recipe_details_ingredient_block_info_three {
@@ -2093,40 +2097,68 @@ form button:hover {
   
   .recipe_instruction_one,
   .recipe_instruction_two {
+    width: 100%;
     margin-top: 48px;
     flex-direction: column;
-    justify-content: flex-start;  
-    margin: 30px 130px 30px 130px;
+    justify-content: center;  
+    margin: 0 auto;
   }
 
   .recipe_instruction_one_container_filler_block,
   .recipe_instruction_two_container_filler_block {
-    flex-direction: column;
-    justify-content: flex-start; 
-    margin: 30px 130px 30px 130px;
+    width: 100%;
+    flex-direction: column; 
+    margin: 0 auto;
   }
 
   .recipe_instruction_one_container_filler_block_one_text,
   .recipe_instruction_two_container_filler_block_one_text {
     width: 100%;
     height: auto; 
-     justify-content: flex-start; 
-     margin: 30px 130px 30px 130px;
+    margin: 0 auto;
+  }
+
+  .recipe_instruction_one_container_filler_block_two_text,
+  .recipe_instruction_two_container_filler_block_two_text {
+    width: 100%;
+    height: auto; 
+    margin: 0 auto;
   }
   
   .recipe_instruction_one_container_filler_block_one_headline,
   .recipe_instruction_two_container_filler_block_one_headline {
-    margin: 96px 130px 30px 130px;
+    color:var(--color-white);
+    height:40px;
+    text-transform: uppercase;
+    font-weight:400;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    margin-top:96px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px var(--background-color-dark-bg);
   }
 
   .recipe_instruction_one_container_filler_block_two_headline,
   .recipe_instruction_two_container_filler_block_two_headline {
-    margin: 96px 130px 30px 50px;
-    border: 1fr solid var(--color-light);
+    width: 100%;
+    margin: 0 auto;
+    color:var(--color-white);
+    height:40px;
+    text-transform: uppercase;
+    font-weight:400;
+    margin: 0 auto;
+    margin-top:96px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px var(--background-color-dark-bg);
   }
 
   .ingredients_list {
-    margin: 10px 30px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .meet_the_team_headline {
@@ -2135,26 +2167,26 @@ form button:hover {
   }
 
   .meet_the_team_content {
-    grid-template-columns: 1fr; 
-    gap: 20px;
-    width:fit-content; 
+    width:100%;
     margin: 0 auto;
+    justify-content: center;
     display: flex;
-    flex-direction: column;
-    margin-left: 15px;
+    flex-wrap: wrap; 
+    gap: 20px;
   }
 
   .meet_the_team_content_block {
     background-color: var(--background-color-light);
     border-radius: 5px;
     box-shadow: 1px 1px 1px var(--background-color-dark-bg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   .meet_the_team_content_block_image img {
-    height: 150px; 
+    height: 150px;
+    width: fit-content; 
   }
 
   .meet_the_team_content_block_text {
@@ -2179,16 +2211,18 @@ form button:hover {
   .mission_image {
     grid-template-columns: 1fr;
     height: auto;
-    min-height: 500px;
+    min-height: 200px;
     margin-top: 40px;
     clip-path: none;
+    justify-content: center;
+    align-items: center;
   }
 
   .mission_image_content {
     grid-column-start: 1;
     grid-row-start: 1;
     width: 90%;
-    margin: 0 auto;
+    margin: 25px 25px;
     justify-content: center;
     align-items: center;
   }
